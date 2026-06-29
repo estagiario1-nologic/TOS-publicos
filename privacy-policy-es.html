@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidad de Agridac.">
+  <title>Política de Privacidad - Agridac</title>
+  <style>
+    :root { color-scheme: light; --bg: #f4f7f4; --surface: #fff; --soft: #f8fbf8; --text: #17231d; --muted: #5f6f66; --line: #dce7df; --brand: #176b4d; --dark: #0e4e39; --soft-brand: #e7f4ed; --accent: #b8872b; --shadow: 0 20px 60px rgba(23, 35, 29, .10); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.65; color: var(--text); background: radial-gradient(circle at top left, rgba(23, 107, 77, .14), transparent 34rem), linear-gradient(180deg, #fbfdfb 0%, var(--bg) 44%, #eef4ef 100%); }
+    a { color: var(--dark); font-weight: 700; text-underline-offset: .18em; }
+    .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; }
+    .name { display: block; font-size: 18px; font-weight: 850; }
+    .subtitle { display: block; margin-top: -3px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .top-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; justify-content: flex-end; }
+    .nav, .language-switch { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+    .language-switch { padding-left: 18px; border-left: 1px solid var(--line); }
+    .nav a, .language-switch a { padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: rgba(255,255,255,.75); text-decoration: none; font-size: 14px; }
+    .language-switch a { min-width: 44px; text-align: center; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr); gap: 26px; align-items: stretch; padding: 36px 0 24px; }
+    .hero-copy, .meta, .card, .toc { border: 1px solid var(--line); background: rgba(255,255,255,.9); box-shadow: var(--shadow); }
+    .hero-copy { padding: 38px; border-radius: 22px; }
+    .eyebrow { display: inline-flex; margin: 0 0 18px; padding: 7px 11px; border-radius: 999px; color: var(--dark); background: var(--soft-brand); font-size: 13px; font-weight: 800; }
+    h1 { max-width: 760px; margin: 0; font-size: clamp(36px, 5vw, 64px); line-height: 1.02; }
+    .lead { max-width: 760px; margin: 22px 0 0; color: var(--muted); font-size: 18px; }
+    .meta { display: flex; flex-direction: column; justify-content: space-between; padding: 28px; border-radius: 22px; background: var(--dark); color: #fff; }
+    .meta p, .meta li { color: rgba(255,255,255,.84); }
+    .meta ul { display: grid; gap: 16px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .meta strong { display: block; color: #fff; font-size: 13px; text-transform: uppercase; }
+    .section-grid { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 28px; padding: 34px 0; }
+    .toc { position: sticky; top: 18px; align-self: start; padding: 18px; border-radius: 18px; box-shadow: none; }
+    .toc a { display: block; padding: 8px 0; color: var(--muted); text-decoration: none; font-size: 14px; }
+    .content { display: grid; gap: 18px; }
+    .card { padding: 26px; border-radius: 18px; background: var(--surface); box-shadow: 0 12px 30px rgba(23,35,29,.06); }
+    h2 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+    .item { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+    .item strong { display: block; margin-bottom: 4px; }
+    .notice { padding: 18px; border-left: 4px solid var(--accent); border-radius: 14px; background: #fff8e9; color: #4c3a17; }
+    .footer { margin: 16px 0 40px; padding: 24px 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 860px) { .topbar, .hero, .section-grid { display: grid; grid-template-columns: 1fr; } .nav { justify-content: flex-start; } .hero-copy, .meta, .card { padding: 22px; } .toc { position: static; } .grid { grid-template-columns: 1fr; } }
+    .brand-logo { width: 54px; height: 42px; object-fit: contain; display: block; }
+    @media (max-width: 860px) { .top-actions { justify-content: flex-start; } .language-switch { padding-left: 0; border-left: 0; } }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="index.html" aria-label="Agridac"><img class="brand-logo" src="AD_V1.png" alt="" aria-hidden="true"><span><span class="name">Agridac</span><span class="subtitle">Alquiler de maquinaria agrícola</span></span></a>
+    <div class="top-actions"><nav class="nav" aria-label="Páginas legales"><a href="privacy-policy-es.html">Privacidad</a><a href="account-deletion-es.html">Eliminar cuenta</a><a href="terms-of-service-es.html">Términos</a></nav><nav class="language-switch" aria-label="Idioma"><a href="privacy-policy.html">PT</a><a href="privacy-policy-en.html">EN</a></nav></div>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="eyebrow">Privacidad y datos personales</p><h1 id="page-title">Política de Privacidad</h1><p class="lead">Esta página explica qué datos trata Agridac, con qué finalidades, qué proveedores técnicos se usan y cómo puede solicitar la eliminación de su cuenta.</p></div>
+      <aside class="meta" aria-label="Resumen del documento"><p>Documento legal público para usuarios, revisores de tiendas y solicitudes de protección de datos.</p><ul><li><strong>Última actualización</strong>26 de junio de 2026</li><li><strong>Contacto</strong>agridac.suporte@protonmail.com</li></ul></aside>
+    </section>
+    <section class="section-grid">
+      <aside class="toc" aria-label="Índice"><strong>Índice</strong><a href="#data">Datos recogidos</a><a href="#payments">Pagos</a><a href="#purposes">Cómo usamos los datos</a><a href="#providers">Proveedores</a><a href="#location">Localización</a><a href="#retention">Conservación</a><a href="#deletion">Eliminación</a><a href="#security">Seguridad</a><a href="#contact">Contacto</a></aside>
+      <div class="content">
+        <section class="card" id="data"><h2>Datos que recogemos</h2><p>Agridac ofrece una aplicación para consultar, publicar y gestionar maquinaria agrícola para alquiler. Para prestar este servicio, podemos tratar datos proporcionados por el usuario y datos generados por el uso de la plataforma.</p><div class="grid"><div class="item"><strong>Cuenta y perfil</strong>Nombre, email, teléfono, NIF, localidad, idioma, tema, foto de perfil, estado de verificación de email, identificador interno de usuario y tipo de usuario.</div><div class="item"><strong>Contenido de la plataforma</strong>Maquinaria publicada, fotografías, documentos, reservas, mensajes, valoraciones, notificaciones e historial de plan/suscripción.</div><div class="item"><strong>Datos técnicos y operativos</strong>Identificadores de sesión/autenticación y registros técnicos necesarios para seguridad, prevención de abuso, soporte, diagnóstico y funcionamiento de la plataforma.</div><div class="item"><strong>Pagos y suscripciones</strong>Estado del plan, historial de suscripción, identificadores técnicos de cliente/suscripción/precio y confirmaciones de pago. Agridac no guarda datos completos de tarjeta.</div></div></section>
+        <section class="card" id="payments"><h2>Pagos</h2><p>En la web, los pagos de suscripciones pueden ser procesados por Stripe. Agridac puede guardar identificadores técnicos asociados al pago, como identificadores de cliente, suscripción o precio. Los datos completos de tarjeta son tratados por Stripe y no son guardados por Agridac.</p><p>En Android e iOS, las suscripciones digitales deben procesarse mediante los sistemas de compra de las tiendas respectivas cuando esta funcionalidad esté activada.</p><div class="notice">Las versiones móviles publicadas en tiendas no deben enviar usuarios a Stripe para comprar suscripciones digitales.</div></section>
+        <section class="card" id="purposes"><h2>Cómo usamos los datos</h2><p>Usamos los datos para crear y autenticar cuentas, gestionar perfiles, permitir la publicación y consulta de maquinaria, gestionar reservas, enviar mensajes, mostrar notificaciones, prestar soporte, prevenir abusos y cumplir obligaciones legales.</p></section>
+        <section class="card" id="providers"><h2>Compartición y subprocesadores</h2><p>Agridac usa proveedores técnicos para operar la plataforma. Estos proveedores tratan datos solo en la medida necesaria para prestar sus servicios.</p><div class="grid"><div class="item"><strong>Supabase</strong>Autenticación, base de datos, almacenamiento de archivos/imágenes, funciones backend y control de acceso.</div><div class="item"><strong>Stripe</strong>Procesamiento de pagos y suscripciones en la versión web. Stripe procesa datos de pago y Agridac guarda solo los identificadores técnicos necesarios.</div><div class="item"><strong>Google Play</strong>Cuando las suscripciones Android estén activadas, procesa compras in-app, recibos, estado de suscripción y datos de facturación requeridos por la tienda.</div><div class="item"><strong>Apple</strong>Cuando las suscripciones iOS estén activadas, procesa compras in-app, recibos, estado de suscripción y datos de facturación requeridos por App Store.</div></div></section>
+        <section class="card" id="location"><h2>Localización</h2><p>La app trata la localidad/ciudad indicada por el usuario y la localidad asociada a la maquinaria. No usa permiso de GPS del dispositivo para recoger ubicación precisa.</p></section>
+        <section class="card" id="retention"><h2>Conservación</h2><p>Conservamos datos mientras la cuenta esté activa o mientras sean necesarios para operar la plataforma, resolver disputas, prevenir fraude, cumplir obligaciones legales o mantener registros exigidos por ley.</p></section>
+        <section class="card" id="deletion"><h2>Eliminación de cuenta y datos</h2><p>El usuario puede solicitar la eliminación de la cuenta en la propia aplicación, en la pantalla Perfil, o mediante la página <a href="account-deletion-es.html">Eliminar cuenta</a>. La eliminación elimina los datos controlados por Agridac, salvo cuando la conservación sea necesaria por obligación legal, seguridad, antifraude o resolución de disputas.</p></section>
+        <section class="card" id="security"><h2>Seguridad</h2><p>Aplicamos medidas técnicas y organizativas para proteger los datos, incluyendo autenticación, controles de acceso, políticas de base de datos y proveedores especializados en infraestructura segura.</p></section>
+        <section class="card" id="contact"><h2>Contacto</h2><p>Para cuestiones de privacidad o solicitudes sobre datos personales, contacte con Agridac por email: <a href="mailto:agridac.suporte@protonmail.com">agridac.suporte@protonmail.com</a>.</p></section>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><p>Agridac. Esta página se proporciona para transparencia, soporte y revisión por las tiendas de aplicaciones.</p></footer>
+</body>
+</html>
