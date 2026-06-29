@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como eliminar una cuenta Agridac y solicitar la eliminacion de datos.">
+  <title>Eliminar Cuenta - Agridac</title>
+  <style>
+    :root { color-scheme: light; --bg: #f4f7f4; --surface: #fff; --soft: #f8fbf8; --text: #17231d; --muted: #5f6f66; --line: #dce7df; --brand: #176b4d; --dark: #0e4e39; --danger: #b42318; --danger-soft: #fff1ef; --shadow: 0 20px 60px rgba(23,35,29,.10); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.65; color: var(--text); background: radial-gradient(circle at top left, rgba(180,35,24,.10), transparent 34rem), linear-gradient(180deg, #fbfdfb 0%, var(--bg) 44%, #eef4ef 100%); }
+    a { color: var(--dark); font-weight: 700; text-underline-offset: .18em; }
+    .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; }
+    .mark { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 12px; color: #fff; font-size: 20px; font-weight: 900; background: linear-gradient(135deg, var(--brand), #2f946e); box-shadow: 0 10px 24px rgba(23,107,77,.24); }
+    .name { display: block; font-size: 18px; font-weight: 850; }
+    .subtitle { display: block; margin-top: -3px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+    .nav a { padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: rgba(255,255,255,.75); text-decoration: none; font-size: 14px; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); gap: 26px; align-items: stretch; padding: 36px 0 24px; }
+    .hero-copy, .action, .summary, .card { border: 1px solid var(--line); background: rgba(255,255,255,.9); box-shadow: var(--shadow); }
+    .hero-copy { padding: 38px; border-radius: 22px; }
+    .eyebrow { display: inline-flex; margin: 0 0 18px; padding: 7px 11px; border-radius: 999px; color: var(--danger); background: var(--danger-soft); font-size: 13px; font-weight: 800; }
+    h1 { max-width: 760px; margin: 0; font-size: clamp(36px, 5vw, 64px); line-height: 1.02; }
+    .lead { max-width: 760px; margin: 22px 0 0; color: var(--muted); font-size: 18px; }
+    .action { display: flex; flex-direction: column; justify-content: space-between; padding: 28px; border-radius: 22px; background: var(--dark); color: #fff; }
+    .action p { color: rgba(255,255,255,.84); }
+    .email { display: inline-flex; margin-top: 24px; padding: 12px 14px; border-radius: 12px; color: var(--dark); background: #fff; text-decoration: none; }
+    .section-grid { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 28px; padding: 34px 0; }
+    .summary { position: sticky; top: 18px; align-self: start; padding: 18px; border-radius: 18px; box-shadow: none; }
+    .summary p { margin: 0 0 10px; color: var(--muted); font-size: 14px; }
+    .content { display: grid; gap: 18px; }
+    .card { padding: 26px; border-radius: 18px; background: var(--surface); box-shadow: 0 12px 30px rgba(23,35,29,.06); }
+    h2 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    .steps { display: grid; gap: 14px; margin: 18px 0 0; padding: 0; list-style: none; counter-reset: step; }
+    .steps li { position: relative; padding: 16px 16px 16px 58px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); counter-increment: step; }
+    .steps li::before { content: counter(step); position: absolute; left: 16px; top: 16px; display: grid; width: 28px; height: 28px; place-items: center; border-radius: 999px; color: #fff; background: var(--brand); font-weight: 850; }
+    .notice { padding: 18px; border-left: 4px solid var(--danger); border-radius: 14px; background: var(--danger-soft); color: #5f1913; }
+    .footer { margin: 16px 0 40px; padding: 24px 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 860px) { .topbar, .hero, .section-grid { display: grid; grid-template-columns: 1fr; } .nav { justify-content: flex-start; } .hero-copy, .action, .card { padding: 22px; } .summary { position: static; } }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="index.html" aria-label="Agridac"><span class="mark">A</span><span><span class="name">Agridac</span><span class="subtitle">Alquiler de maquinaria agricola</span></span></a>
+    <nav class="nav" aria-label="Paginas legales"><a href="privacy-policy-es.html">Privacidad</a><a href="account-deletion-es.html">Eliminar cuenta</a><a href="account-deletion.html">PT</a><a href="account-deletion-en.html">EN</a></nav>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="eyebrow">Cuenta y datos</p><h1 id="page-title">Eliminar Cuenta Agridac</h1><p class="lead">Puede eliminar su cuenta directamente en la aplicacion o solicitar la eliminacion por email si ya no tiene acceso a la app.</p></div>
+      <aside class="action" aria-label="Solicitud por email"><p>Si no puede acceder a la aplicacion, envie la solicitud desde el email asociado a la cuenta.</p><a class="email" href="mailto:agridac.suporte@protonmail.com?subject=Eliminar%20cuenta%20Agridac">agridac.suporte@protonmail.com</a></aside>
+    </section>
+    <section class="section-grid">
+      <aside class="summary"><strong>Resumen</strong><p>Ultima actualizacion: 26 de junio de 2026.</p><p>La eliminacion borra la cuenta y los datos asociados controlados por Agridac, salvo obligaciones legales o de seguridad.</p></aside>
+      <div class="content">
+        <section class="card"><h2>Eliminar la cuenta en la aplicacion</h2><p>Este es el metodo recomendado si todavia puede iniciar sesion.</p><ol class="steps"><li>Abra Agridac e inicie sesion en su cuenta.</li><li>Acceda a la pantalla Perfil.</li><li>Seleccione Eliminar cuenta.</li><li>Confirme la accion para eliminar la cuenta y los datos asociados controlados por Agridac.</li></ol></section>
+        <section class="card"><h2>Solicitar eliminacion por email</h2><p>Si no puede acceder a la app, envie una solicitud a <a href="mailto:agridac.suporte@protonmail.com">agridac.suporte@protonmail.com</a> desde el email asociado a la cuenta. Use el asunto "Eliminar cuenta Agridac".</p><div class="notice">Para proteger la cuenta, Agridac puede pedir informacion adicional para confirmar que la solicitud procede del titular.</div></section>
+        <section class="card"><h2>Datos eliminados</h2><p>La eliminacion borra la cuenta de usuario y los datos asociados controlados por Agridac, incluidos datos de perfil, contenido publicado, archivos cargados, mensajes, notificaciones y registros operativos asociados, cuando corresponda.</p></section>
+        <section class="card"><h2>Datos que pueden conservarse</h2><p>Algunos datos pueden conservarse durante el periodo necesario para cumplir obligaciones legales, resolver disputas, prevenir abusos o fraude, mantener registros contables o proteger la seguridad de la plataforma.</p></section>
+        <section class="card"><h2>Plazo</h2><p>Las solicitudes enviadas por email se revisan y procesan en un plazo razonable tras validar la identidad del titular de la cuenta.</p></section>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><p>Agridac. Para informacion sobre el tratamiento de datos, consulte la <a href="privacy-policy-es.html">Politica de Privacidad</a>.</p></footer>
+</body>
+</html>
