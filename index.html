@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Páginas legais públicas da Agridac.">
+  <title>Páginas Legais - Agridac</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7f4;
+      --surface: #ffffff;
+      --text: #17231d;
+      --muted: #5f6f66;
+      --line: #dce7df;
+      --brand: #176b4d;
+      --brand-dark: #0e4e39;
+      --brand-soft: #e7f4ed;
+      --shadow: 0 20px 60px rgba(23, 35, 29, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(23, 107, 77, 0.14), transparent 34rem),
+        linear-gradient(180deg, #fbfdfb 0%, var(--bg) 54%, #eef4ef 100%);
+    }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 28px 0 40px;
+      display: grid;
+      align-content: center;
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--brand), #2f946e);
+      box-shadow: 0 10px 24px rgba(23, 107, 77, 0.24);
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 20px;
+      font-weight: 850;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: -3px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.04;
+    }
+
+    .lead {
+      max-width: 700px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: grid;
+      gap: 14px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      text-decoration: none;
+      color: var(--text);
+      box-shadow: 0 12px 30px rgba(23, 35, 29, 0.06);
+    }
+
+    .card strong {
+      font-size: 20px;
+    }
+
+    .card span {
+      color: var(--muted);
+    }
+
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .languages a {
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--brand-dark);
+      background: rgba(255, 255, 255, 0.78);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <a class="brand" href="index.html" aria-label="Agridac">
+      <span class="brand-mark">A</span>
+      <span>
+        <span class="brand-name">Agridac</span>
+        <span class="brand-subtitle">Páginas legais públicas</span>
+      </span>
+    </a>
+
+    <section class="hero">
+      <h1>Páginas legais da Agridac</h1>
+      <p class="lead">Aceda à política de privacidade e à informação sobre eliminação de conta. Estes documentos são disponibilizados para utilizadores, suporte e revisão pelas lojas de aplicações.</p>
+    </section>
+
+    <section class="grid" aria-label="Documentos principais">
+      <a class="card" href="privacy-policy.html">
+        <strong>Política de Privacidade</strong>
+        <span>Dados recolhidos, finalidades, fornecedores, pagamentos e contacto.</span>
+      </a>
+      <a class="card" href="account-deletion.html">
+        <strong>Eliminar conta</strong>
+        <span>Como eliminar a conta na app ou pedir eliminação por email.</span>
+      </a>
+    </section>
+
+    <nav class="languages" aria-label="Outros idiomas">
+      <a href="privacy-policy.html">PT</a>
+      <a href="privacy-policy-en.html">EN</a>
+      <a href="privacy-policy-es.html">ES</a>
+    </nav>
+  </main>
+</body>
+</html>
